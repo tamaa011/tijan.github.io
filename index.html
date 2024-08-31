@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tijan</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/smartstyle.css">
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/pic_245.jpg" />
+</head>
+<body>
+<h2>Login Form</h2>
+
+<form method="post">
+  <div class="imgcontainer">
+    <img src="img/pic_245.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input  type="text" placeholder="Enter Email" name="uname" id="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+        
+    <button type="button" onclick="signIn()">Login</button>
+<!--
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+-->
+  </div>
+
+<!--
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+-->
+</form>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/customsmart.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+
+     function signIn() {
+          if (document.getElementById("name").value == 'mohamed@tijan.com' && document.getElementById('pass').value == '200')
+          {  window.location.href = 'card.html'
+          }
+         else{ alert('Please check your username and password');}
+     }
+    </script>
+</body>
+</html>
